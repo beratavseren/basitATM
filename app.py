@@ -1,8 +1,17 @@
 from flask import Flask
-from flask_restful import Api, Resource,reqparse
+from flask_restful import Api, Resource
 
 app = Flask(__name__)
 api = Api(app)
+
+
+class Toplam(Resource):
+    def get(self, sayi1, sayi2):
+        return {'toplam': sayi1+sayi2}
+
+
+api.add_resource(Toplam, '/toplam/<int:sayi1>+<int:sayi2>')
+
 
 if __name__ == '__main__':
     app.run()
