@@ -1,0 +1,4 @@
+#!/bin/bash
+# servisi durdur
+systemctl stop myapp.service
+systemctl disable myapp.service

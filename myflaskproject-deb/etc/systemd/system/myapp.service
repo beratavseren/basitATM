@@ -1,0 +1,13 @@
+[Unit]
+Description=toplama ve çarpa get ve post isteklerine cevap veren Flask Uygulaması Servisi
+After=network.target
+
+[Service]
+User=berat
+Group=www-data
+WorkingDirectory=/home/berat/myflaskproject
+Environment="PATH=/home/berat/myflaskproject/venv/bin"
+ExecStart=/home/berat/myflaskproject/venv/bin/python /home/berat/myflaskproject/app.py
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,4 @@
+#!/bin/bash
+# servisi başlat
+systemctl enable myapp.service
+systemctl start myapp.service
