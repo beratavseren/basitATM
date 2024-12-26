@@ -3,6 +3,6 @@ Version: 1.0
 Section: base
 Priority: optional
 Architecture: all
-Depends: python3, python3-venv
+Depends: python3, python3-venv, python3-flask, python3-flask-restful
 Maintainer: Musa Berat Avseren <musaberatavseren@gmail.com>
 Description: basit toplama ve çarpma get ve post isteklerine cevap veren api Flask uygulaması
