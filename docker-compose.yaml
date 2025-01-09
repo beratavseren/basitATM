@@ -1,0 +1,9 @@
+services:
+  flask-api:
+    image: flask-api     # Daha önce oluşturduğunuz Docker imajı
+    ports:
+      - "5000:5000"      # Uygulamanın 5000 portunda çalışmasını sağlar
+    volumes:
+      - ./data:/app/data  # GitHub reposundaki 'data' klasörünü Docker konteynerindeki '/app/data' klasörüne bağlar
+    container_name: flask-api-container
+    restart: unless-stopped
