@@ -49,3 +49,8 @@ oluşturulan konteynerın çalışıp çalışmadığını kontol etmek için a�
 docker ps
 
 eğer konteyner çalışıyor ise listelenecektir.
+
+## Docker-compose.yaml dosyasındaki imaj adı kontrolü:
+
+eğer imaj adını varsayılandan farklı girdiyseniz docker-compose.yaml dosyasındaki varsayılan imaj adını değiştirmeniz gerekecektir.
+
