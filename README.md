@@ -41,3 +41,11 @@ Oluşturduğunuz Docker imajını bir konteyner olarak çalıştırmak için aş
 
 ```bash
 docker run -d -p 5000:5000 --name flask-api-container flask-api
+
+## Docker konteyneri çalıştığını kontrol etme
+
+oluşturulan konteynerın çalışıp çalışmadığını kontol etmek için aşağıdaki komutu kullanın:
+```bash
+docker ps
+
+eğer konteyner çalışıyor ise listelenecektir.
